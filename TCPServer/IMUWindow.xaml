@@ -1,0 +1,14 @@
+﻿<Window x:Class="TCPServer.IMUWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCPServer"
+        mc:Ignorable="d"
+        Title="IMUWindow" Height="141.142" Width="130.858" WindowStyle="None" ShowInTaskbar="False" ResizeMode="NoResize">
+    <Rectangle  HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="162" StrokeThickness="0" Margin="-16,-4,0,0">
+        <Rectangle.Fill>
+            <ImageBrush ImageSource="cacasmiley.jpg" Stretch="Uniform"/>
+        </Rectangle.Fill>
+    </Rectangle>
+</Window>

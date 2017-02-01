@@ -1,0 +1,16 @@
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\bin\Release\TCPServer.exe.config
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\bin\Release\TCPServer.exe
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\bin\Release\TCPServer.pdb
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\MainWindow.g.cs
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\App.g.cs
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer_MarkupCompile.cache
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer_MarkupCompile.lref
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\MainWindow.baml
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer.g.resources
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer.Properties.Resources.resources
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer.csproj.GenerateResource.Cache
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer.exe
+c:\users\emeri\documents\visual studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer.pdb
+C:\Users\emeri\Documents\Visual Studio 2015\Projects\TCPServer\TCPServer\obj\Release\TCPServer.csprojResolveAssemblyReference.cache
+C:\Users\emeri\Documents\Visual Studio 2015\Projects\TCPServer\TCPServer\obj\Release\IMUWindow.g.cs
+C:\Users\emeri\Documents\Visual Studio 2015\Projects\TCPServer\TCPServer\obj\Release\IMUWindow.baml
