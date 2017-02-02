@@ -8,7 +8,7 @@ using System.Net;
 using System.Threading;
 using System.Windows.Input;
 using System.Windows.Forms;
-using System.Drawing;
+using System.IO;
 
 
 namespace TCPServer
@@ -47,28 +47,6 @@ namespace TCPServer
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-            var H = SystemParameters.FullPrimaryScreenHeight - this.Height + 25;
-            var W = SystemParameters.FullPrimaryScreenWidth - this.Width;
-            this.Top = H;
-            this.Left = W;
-            m_tcplistener = new TcpListener(IPAddress.Any, 1234);
-            m_listenThread = new Thread(new ThreadStart(ListenForClients));
-            m_listenThread.Start();
-            IMU = new IMUValues();
-            this.nIcon.Icon = new System.Drawing.Icon(@"F:\Documents\OneDrive\Visual Studio 2015\Projects\TCPServer\TCPServer\tcp.ico");
-            this.nIcon.ShowBalloonTip(5000, "Test", "Test baloon tip", ToolTipIcon.Info);
-            nIcon.DoubleClick += NIcon_DoubleClick;
-            //m_socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        }
-
-        private void NIcon_DoubleClick(object sender, EventArgs e)
-        {
-            this.Show();
-            nIcon.Visible = false; 
-        }
 
         NotifyIcon nIcon = new NotifyIcon();
         private IMUValues IMU;
@@ -80,6 +58,62 @@ namespace TCPServer
         private Thread m_listenThread;
         private Thread m_clientThread;
         private IMUWindow ImuWindow;
+
+
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            InitWindowPosition();
+            InitTCPServer();
+
+            IMU = new IMUValues();
+
+            // FInd ressource folder and icon of the app
+            var crtDir = Directory.GetCurrentDirectory();
+            string resDir = null;
+
+            crtDir = Directory.GetParent(crtDir).FullName;
+            var subDir = Directory.GetDirectories(crtDir, "Ressources");
+            if (subDir.Length == 1)
+                resDir = subDir[0];
+            else
+            {
+                crtDir = Directory.GetParent(crtDir).FullName;
+                subDir = Directory.GetDirectories(crtDir, "Ressources");
+                if (subDir.Length == 1)
+                    resDir = subDir[0];
+            }
+            if (resDir != null)
+            {
+                this.nIcon.Icon = new System.Drawing.Icon(resDir + "/tcp.ico");
+                //this.nIcon.ShowBalloonTip(5000, "Test", "Test baloon tip", ToolTipIcon.Info);
+                nIcon.DoubleClick += NIcon_DoubleClick;
+            }
+            //m_socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        }
+
+        private void InitTCPServer()
+        {
+            m_tcplistener = new TcpListener(IPAddress.Any, 1234);
+            m_listenThread = new Thread(new ThreadStart(ListenForClients));
+            m_listenThread.Start();
+        }
+
+        private void InitWindowPosition()
+        {
+            var H = SystemParameters.FullPrimaryScreenHeight - this.Height + 25;
+            var W = SystemParameters.FullPrimaryScreenWidth - this.Width;
+            this.Top = H;
+            this.Left = W;
+        }
+
+        private void NIcon_DoubleClick(object sender, EventArgs e)
+        {
+            this.Show();
+            nIcon.Visible = false; 
+        }
+
 
         private void ListenForClients()
         {
@@ -189,7 +223,7 @@ namespace TCPServer
             int ratio = 400;
             var H = SystemParameters.FullPrimaryScreenHeight / 2 + x * ratio - ImuWindow.ActualHeight / 2;
             var W = SystemParameters.FullPrimaryScreenWidth / 2 + y * ratio * 2 - ImuWindow.ActualWidth / 2;
-            if ((bool)RBtnPoo.IsChecked)
+            if ((bool)RBtnSmiley.IsChecked)
             {
                 ImuWindow.Show();
                 ImuWindow.Top = H;

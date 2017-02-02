@@ -8,7 +8,7 @@
         Title="IMUWindow" Height="141.142" Width="130.858" WindowStyle="None" ShowInTaskbar="False" ResizeMode="NoResize">
     <Rectangle  HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="162" StrokeThickness="0" Margin="-16,-4,0,0">
         <Rectangle.Fill>
-            <ImageBrush ImageSource="cacasmiley.jpg" Stretch="Uniform"/>
+            <ImageBrush ImageSource="Ressources/smiley.jpg" Stretch="Uniform"/>
         </Rectangle.Fill>
     </Rectangle>
 </Window>

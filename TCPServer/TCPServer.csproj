@@ -105,10 +105,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="cacasmiley.jpg" />
+    <Resource Include="Ressources\tcp.ico" />
+    <Resource Include="Ressources\tcpip.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="favicon.ico" />
+    <Resource Include="Ressources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ressources\smiley.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

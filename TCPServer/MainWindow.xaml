@@ -16,8 +16,8 @@
         <Button x:Name="button1" Content="Send" HorizontalAlignment="Left" Margin="290,260,0,0" VerticalAlignment="Top" Width="52" Click="button1_Click" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="CbClient" HorizontalAlignment="Left" Margin="55,260,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <TextBox x:Name="TbUsername" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120" Background="#FF37393A" Foreground="White" FontSize="13.333"/>
-        <RadioButton x:Name="RBtnPoo" Content="Poo" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" GroupName="IMU" Grid.Column="1" Foreground="White"/>
-        <RadioButton x:Name="RBtnMouse" Content="Mouse" HorizontalAlignment="Left" Margin="64,10,0,0" VerticalAlignment="Top" GroupName="IMU" Grid.Column="1" Foreground="White"/>
+        <RadioButton x:Name="RBtnSmiley" Content="Smiley" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" GroupName="IMU" Grid.Column="1" Foreground="White"/>
+        <RadioButton x:Name="RBtnMouse" Content="Mouse" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" GroupName="IMU" Grid.Column="1" Foreground="White"/>
         <RadioButton x:Name="RBtnNormal" Content="Normal" HorizontalAlignment="Left" Margin="272,10,0,0" VerticalAlignment="Top" IsChecked="True" GroupName="IMU" Foreground="White"/>
         <Button x:Name="button" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="155,5,0,0" VerticalAlignment="Top" Height="20" Width="20" Background="#FF1D1A1A" BorderBrush="#FFFDFCFC" RenderTransformOrigin="-2.294,1.346" BorderThickness="1,5,1,1" Click="ClickMinimise"/>
 
